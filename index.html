@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acadpia Intro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9ff;
+      overflow-x: hidden;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #5e00c5;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    nav a, .dropdown-btn {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      padding: 10px;
+      z-index: 999;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 8px 12px;
+      color: #333;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .contact-btn {
+      background-color: #5e00c5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 40px;
+      position: relative;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #111;
+    }
+    .hero-text p {
+      font-size: 18px;
+      margin-top: 15px;
+      color: #555;
+    }
+    .hero-buttons {
+      margin-top: 25px;
+      display: flex;
+      gap: 20px;
+    }
+    .hero-buttons a {
+      padding: 12px 20px;
+      background-color: #5e00c5;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero-buttons a:hover {
+      background-color: #3a008f;
+    }
+
+    .hero-video {
+      width: 600px;
+      height: 360px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .hero-video iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .floating-icon {
+      position: absolute;
+      opacity: 0.08;
+      width: 80px;
+      z-index: 0;
+    }
+    .icon1 { top: 5%; left: 65%; }
+    .icon2 { bottom: 10%; right: 10%; }
+    .icon3 { top: 50%; left: 5%; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ACADPIA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <span class="dropdown-btn">Study Material</span>
+      <div class="dropdown-content">
+        <a href="https://example.com/gandhi">Gandhi</a>
+        <a href="https://example.com/nehru">Nehru</a>
+        <a href="https://example.com/jinnah">Jinnah</a>
+        <a href="https://example.com/swami">Swami</a>
+      </div>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Nationalism#Anti-colonial" target="_blank">Monthly PDF</a>
+    <a href="https://en.wikipedia.org/wiki/Decolonization" target="_blank">About Us</a>
+    <a class="contact-btn" href="https://en.wikipedia.org/wiki/Colonialism" target="_blank">Contact Us</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Perfect your journey with practice</h1>
+    <p>simply dummy text of the printing typesetting industry. Lorem Ipsum has been</p>
+    <div class="hero-buttons">
+      <a href="#">Daily Quiz</a>
+      <a href="https://en.wikipedia.org/wiki/Imperialism" target="_blank">Free Test Series</a>
+    </div>
+  </div>
+  <div class="hero-video">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+  </div>
+
+  <!-- Floating study icons -->
+  <img class="floating-icon icon1" src="https://cdn-icons-png.flaticon.com/512/3235/3235237.png" alt="icon1" />
+  <img class="floating-icon icon2" src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="icon2" />
+  <img class="floating-icon icon3" src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="icon3" />
+</section>
+
+</body>
+</html>
